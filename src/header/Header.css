@@ -1,0 +1,13 @@
+.Header-socialLink {
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    filter: invert(0.5);
+    cursor: pointer;
+    transition: filter 1s;
+    margin: 16px;
+}
+.Header-socialLink:hover {
+    filter: invert(0.2);
+}
