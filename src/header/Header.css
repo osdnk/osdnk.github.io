@@ -11,3 +11,9 @@
 .Header-socialLink:hover {
     filter: invert(0.2);
 }
+
+.Header-LinksBar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

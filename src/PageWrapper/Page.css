@@ -1,5 +1,9 @@
 .PageWrapper-wrapper {
-  max-width: 390px;
+  max-width: 420px;
   margin: 25px auto auto;
   text-align: start;
+}
+
+.PageWrapper-inner {
+  margin: 15px;
 }

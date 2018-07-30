@@ -1,12 +1,14 @@
 import React from 'react';
-import './Page.css'
+import './Page.css';
 
 export default class Page extends React.Component {
   render() {
     return (
       <div className="PageWrapper-wrapper">
-        {this.props.children}
+        <div className="PageWrapper-inner">
+          {this.props.children}
+        </div>
       </div>
-    )
+    );
   }
 }

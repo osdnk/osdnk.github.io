@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Page from '../PageWrapper/Page';
-import content from '../content/pages/hi'
-import './Hi.css'
+import content from '../content/pages/hi';
+import './Hi.css';
 
 export default () =>
   <Page>
@@ -33,7 +33,7 @@ class IG extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="Hi-igWrapper">
         {this.state.loaded &&
           this.photos.map(p =>
             <img src={p} className="Hi-igPhotos" alt="logo" key={p}/>

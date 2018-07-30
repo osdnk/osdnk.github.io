@@ -9,3 +9,8 @@
 .Hi-ig {
   color: #9e9e9e;
 }
+
+.Hi-igWrapper {
+  text-align: center;
+  justify-content: center;
+}
