@@ -13,7 +13,7 @@ export default () => (
     <div>
     {socials.map((i, ind) =>
       <a href={i.link} key={`sm${ind}`}>
-        <img src={i.logo} className="Header-socialLink" />
+        <img src={i.logo} className="Header-socialLink" alt={i.alt}/>
       </a>
     )}
     </div>
