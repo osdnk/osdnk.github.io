@@ -2,5 +2,5 @@ import * as React from 'react';
 
 export default () =>
   <div>
-    here will we projects some day
+    here will be projects some day
   </div>
