@@ -11,7 +11,6 @@ export default () =>
       )}
       <IG/>
     </div>
-
   </Page>
 
 

@@ -20,9 +20,9 @@ export default () => (
     <div className="Header-LinksBar">
       <NavLink exact to='/' className="App-NavLink" activeClassName="App-activeNavLink">{s.hi}</NavLink>
       <NavLink exact to='/about-me' className="App-NavLink" activeClassName="App-activeNavLink">{s.about}</NavLink>
-      <NavLink to='/resume' className="App-NavLink" activeClassName="App-activeNavLink">{s.resume}</NavLink>
+      <NavLink to='/curriculum' className="App-NavLink" activeClassName="App-activeNavLink">{s.curriculum}</NavLink>
       <NavLink to='/projects' className="App-NavLink" activeClassName="App-activeNavLink">{s.projects}</NavLink>
-      <NavLink to='/work' className="App-NavLink" activeClassName="App-activeNavLink">{s.work}</NavLink>
+      <NavLink to='/technologies' className="App-NavLink" activeClassName="App-activeNavLink">{s.technologies}</NavLink>
     </div>
   </header>
 );

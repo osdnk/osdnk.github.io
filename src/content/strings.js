@@ -3,7 +3,7 @@ export default {
   subtitle: 'personal website',
   hi: 'Hi',
   about: 'About\xa0me',
-  resume: 'Resume',
+  curriculum: 'Curriculum',
   projects: 'Projects',
-  work: 'Work'
+  technologies: 'Technologies'
 }
