@@ -1,7 +1,7 @@
 .Hi-igPhotos {
-  width: 120px;
+    width: 100px;
   margin: 5px;
-  height: 120px;
+    height: 100px;
   background-size: cover;
   object-fit: cover;
 }
