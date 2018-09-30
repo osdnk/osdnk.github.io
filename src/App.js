@@ -7,6 +7,7 @@ import About from './about-me/About';
 import Projects from './projects/Projects';
 import Technologies from './technologies/Technologies';
 import Hi from './hi/Hi';
+import Enroll from './enroll-policy/Enroll-policy'
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
           <Route path="/curriculum" component={Curriculum}/>
           <Route path="/projects" component={Projects}/>
           <Route path="/technologies" component={Technologies}/>
+          <Route path="/enroll-policy" component={Enroll}/>
         </div>
       </Router>
     );
