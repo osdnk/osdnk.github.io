@@ -11,8 +11,20 @@ export default () =>
         <p>
           A Kraków based company developing apps for startups and enterprise.
           <br/>
-          During my job I was involved into developing of Bitwin Casino and then switched to maintaining and
-          contributing into React Native Gesture Handler and React Native Reanimated projects.
+          During my job I was involved into developing commercial apps and
+          contributing into Open Source projects.
+        </p>
+      </li>
+      <li>
+        <h4> II 2018 - now — balance.io</h4>
+        <p>
+          UX and UI support before stable release.
+        </p>
+      </li>
+      <li>
+        <h4> VIII 2018 - II 2019 — askumbrella.com</h4>
+        <p>
+          Full-stack development of service for neighborly help. Delivering mobile app in React Native and related server, occasionally website.
         </p>
       </li>
       <li>
