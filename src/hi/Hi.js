@@ -13,7 +13,7 @@ export default () =>
       )}
       <p>
         If you are working with computers or phones you may want to hire me and to save your time, {" "}
-        <a href='./CV-prof.pdf'>
+        <a href='https://github.com/osdnk/osdnk.github.io/raw/develop/public/CV-prof.pdf'>
           here
         </a>
         {" "}is my resume. You can skip the last pages, where I'm talking about my universities. Probably you do not care.
