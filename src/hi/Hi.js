@@ -2,6 +2,8 @@ import * as React from 'react';
 import Page from '../PageWrapper/Page';
 import content from '../content/pages/hi';
 import './Hi.css';
+import {Link} from "react-router-dom";
+import socials from "../content/socials";
 
 export default () =>
   <Page>
@@ -9,7 +11,35 @@ export default () =>
       {content.map((c, i) =>
       <p key={`hi${i}`}> {c}</p>
       )}
-      <IG/>
+      <p>
+        If you are working with computers or phones you may want to hire me and to save your time, {" "}
+        <a href='./CV-prof.pdf'>
+          here
+        </a>
+        {" "}is my resume. You can skip the last pages, where I'm talking about my universities. Probably you do not care.
+      </p>
+      <p>
+        However, if you want to meet my thoughts you can go <Link to='/arts'>here</Link> and read my short personal essay. Maybe I will add some more content later.
+      </p>
+      <p>
+        You can also find me on some socials, but please, just be nice and respectful.
+        If you want to be a friend of mine, use Facebook.
+        If you want to hire me, do not use Facebook. If you want to talk about coding, use Twitter.
+        Sometimes I am not answering immediately, but if you are just gentle be sure I will be back to you.
+        I am often not reading notifications on GitHub regularly and I am sorry.
+
+      </p>
+      {socials.map((i, ind) =>
+        <a href={i.link} key={`sm${ind}`}>
+          <img src={i.logo} className="Header-socialLink" alt={i.alt}/>
+        </a>
+      )}
+
+      <p>
+        Thanks for this small trip. Hope to see you someday in a real world! Always mind that at the end of the day on the other side of screens all we are humans at last!
+      </p>
+
+      {/*<IG/>*/}
     </div>
   </Page>
 

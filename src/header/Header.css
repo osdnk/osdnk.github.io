@@ -1,7 +1,7 @@
 .Header-socialLink {
     background-size: cover;
-    width: 25px;
-    height: 25px;
+    width: 32px;
+    height: 32px;
     object-fit: cover;
     filter: invert(0.5);
     cursor: pointer;

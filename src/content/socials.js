@@ -13,5 +13,4 @@ export default [
   {logo: mail, link: 'mailto:micosa97@gmail.com',  alt: 'MAIL'},
   {logo: linkedin, link: 'https://www.linkedin.com/in/micha%C5%82-osadnik-%F0%9F%99%86-01a651138/',  alt: 'LI'},
   {logo: github, link: 'https://github.com/osdnk',  alt: 'GH'},
-  {logo: strava, link: 'https://www.strava.com/athletes/32670029',  alt: 'STRAVA'}
 ]

@@ -1,7 +1,7 @@
 .PageWrapper-wrapper {
   max-width: 420px;
-  margin: 25px auto auto;
-  text-align: start;
+  margin: auto auto;
+  text-align: justify;
 }
 
 .PageWrapper-inner {
