@@ -29,11 +29,13 @@ export default () =>
         I am often not reading notifications on GitHub regularly and I am sorry.
 
       </p>
-      {socials.map((i, ind) =>
-        <a href={i.link} key={`sm${ind}`}>
-          <img src={i.logo} className="Header-socialLink" alt={i.alt}/>
-        </a>
-      )}
+      <div id="social-row">
+        {socials.map((i, ind) =>
+          <a href={i.link} key={`sm${ind}`} id="soc">
+            <img src={i.logo} className="Header-socialLink" alt={i.alt}/>
+          </a>
+        )}
+      </div>
 
       <p>
         Thanks for this small trip. Hope to see you someday in a real world. Always mind that at the end of the day on the other side of screens all we are humans at last.
