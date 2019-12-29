@@ -36,7 +36,7 @@ export default () =>
       )}
 
       <p>
-        Thanks for this small trip. Hope to see you someday in a real world! Always mind that at the end of the day on the other side of screens all we are humans at last!
+        Thanks for this small trip. Hope to see you someday in a real world. Always mind that at the end of the day on the other side of screens all we are humans at last.
       </p>
 
       {/*<IG/>*/}

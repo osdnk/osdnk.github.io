@@ -6,7 +6,7 @@ import socials from '../content/socials';
 import { NavLink } from 'react-router-dom';
 
 export default () => (
-  <header className="App-header">
+  <header className="App-header" id="App-header">
     <img src={meanddoge} className="App-picture" alt="logo"/>
     <h1 className="App-title">{s.header}</h1>
     <h2 className="App-subtitle">{s.subtitle}</h2>

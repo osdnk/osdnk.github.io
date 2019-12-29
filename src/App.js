@@ -15,6 +15,8 @@ import s from "./content/strings";
 class App extends Component {
   render() {
     return (
+      <div>
+        <div id="full"/>
       <Router>
         <div className="App" id="App">
           <div className="App-topBar"/>
@@ -32,6 +34,7 @@ class App extends Component {
           <img src={meandtree} className="App-picture-bottom" alt="meandtree"/>
         </div>
       </Router>
+      </div>
     );
   }
 }
@@ -54,7 +57,7 @@ class Fountain {
 
   loop() {
     if (this.autoAddParticle && this.particles.length < this.limit) {
-      this.height = document.getElementById("App").offsetHeight;
+      this.height = document.getElementById("App-header").offsetHeight - 50;
       this.createParticle();
     }
 
@@ -91,6 +94,7 @@ class Fountain {
   }
 
   createParticle() {
+
     const size = this.sizes[Math.floor(Math.random() * this.sizes.length)];
     const speedHorz = Math.random() * 10;
     const speedUp = Math.random() * 25;
