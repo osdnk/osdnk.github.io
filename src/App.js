@@ -18,39 +18,33 @@ function App() {
     <div>
       <div id="full"/>
       <Router>
-        <div className="App" id="App">
-          <div className="App-topBar"/>
-          <Header/>
-          {/*<img src={meanddoge} className="App-picture" alt="logo"/>*/}
-          {/*<h1 className="App-title">{s.header}</h1>*/}
-          {/*<h2 className="App-subtitle">{s.subtitle}</h2>*/}
-          <Route path="/arts" component={Arts}/>
-          {/*<Route path="/about-me" component={About}/>*/}
-          {/*<Route path="/curriculum" component={Curriculum}/>*/}
-          {/*<Route path="/projects" component={Projects}/>*/}
-          {/*<Route path="/technologies" component={Technologies}/>*/}
-          <Route path="/enroll-policy" component={Enroll}/>
-          <Route path="/" component={Hi}/>
-          <img src={meandtree} className="App-picture-bottom" alt="meandtree"/>
-        </div>
+        <Switch>
+          <Route path="/hire-me" component={Hire}/>
+          <Route path="/">
+            <div className="App" id="App">
+              <div className="App-topBar"/>
+              <Header/>
+              {/*<img src={meanddoge} className="App-picture" alt="logo"/>*/}
+              {/*<h1 className="App-title">{s.header}</h1>*/}
+              {/*<h2 className="App-subtitle">{s.subtitle}</h2>*/}
+              <Route path="/arts" component={Arts}/>
+              {/*<Route path="/about-me" component={About}/>*/}
+              {/*<Route path="/curriculum" component={Curriculum}/>*/}
+              {/*<Route path="/projects" component={Projects}/>*/}
+              {/*<Route path="/technologies" component={Technologies}/>*/}
+              <Route path="/enroll-policy" component={Enroll}/>
+              <Route exact path="/" component={Hi}/>
+              <img src={meandtree} className="App-picture-bottom" alt="meandtree"/>
+            </div>
+          </Route>
+        </Switch>
+
       </Router>
     </div>
   );
 }
 
-function AppWrapper() {
-  return (
-    <Router>
-      <Switch>
-        <Route path="/hire-me" component={Hire}/>
-        <Route path="/" component={App}/>
-      </Switch>
-    </Router>
-
-  );
-}
-
-export default AppWrapper;
+export default App;
 
 class Fountain {
   constructor() {
