@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './header/Header';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Curriculum from './curriculum/Curriculum';
 import About from './about-me/About';
 import Arts from './arts/Arts';
+import Hire from './hire-me/Hire';
 import Projects from './projects/Projects';
 import Technologies from './technologies/Technologies';
 import Hi from './hi/Hi';
@@ -12,11 +13,10 @@ import Enroll from './enroll-policy/Enroll-policy'
 import meandtree from "./assets/meandtree.jpg";
 import s from "./content/strings";
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <div id="full"/>
+function App() {
+  return (
+    <div>
+      <div id="full"/>
       <Router>
         <div className="App" id="App">
           <div className="App-topBar"/>
@@ -34,12 +34,23 @@ class App extends Component {
           <img src={meandtree} className="App-picture-bottom" alt="meandtree"/>
         </div>
       </Router>
-      </div>
-    );
-  }
+    </div>
+  );
 }
 
-export default App;
+function AppWrapper() {
+  return (
+    <Router>
+      <Switch>
+        <Route path="/hire-me" component={Hire}/>
+        <Route path="/" component={App}/>
+      </Switch>
+    </Router>
+
+  );
+}
+
+export default AppWrapper;
 
 class Fountain {
   constructor() {
@@ -57,7 +68,10 @@ class Fountain {
 
   loop() {
     if (this.autoAddParticle && this.particles.length < this.limit) {
-      this.height = document.getElementById("App-header").offsetHeight - 50;
+      const component = document.getElementById("App-header")
+      if (component) {
+        this.height = component.offsetHeight - 50;
+      }
       this.createParticle();
     }
 
@@ -74,8 +88,8 @@ class Fountain {
     const move = isTouchInteraction ? 'touchmove' : 'mousemove';
 
     document.addEventListener(move, (e) => {
-      this.mouseX = e.pageX || e.touches[0].pageX;
-      this.mouseY = e.pageY || e.touches[0].pageY;
+      this.mouseX = e.pageX || e.touches && e.touches[0].pageX;
+      this.mouseY = e.pageY || e.touches && e.touches[0].pageY;
     }, {passive: false});
 
     document.addEventListener(tap, (e) => {
@@ -115,7 +129,10 @@ class Fountain {
       transform: rotate(${spinVal}deg);
     `);
 
-    document.getElementById("App").appendChild(particle);
+    const App = document.getElementById("App")
+    if (App) {
+      App.appendChild(particle);
+    }
 
     this.particles.push({
       element: particle,

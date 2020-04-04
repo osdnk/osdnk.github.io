@@ -5,8 +5,9 @@
     object-fit: cover;
     filter: invert(0.5);
     cursor: pointer;
+    display: block;
     transition: filter 1s;
-    margin: 4px 16px;
+    margin: 4px auto;
 }
 .Header-socialLink:hover {
     filter: invert(0.2);

@@ -12,11 +12,12 @@ export default () =>
       <p key={`hi${i}`}> {c}</p>
       )}
       <p>
-        If you are working with computers or phones you may want to hire me and to save your time, {" "}
+        If you are working with computers or phones you may want to hire me, read <Link to='/hire-me'>this page</Link> and {" "}
         <a href='https://github.com/osdnk/osdnk.github.io/raw/develop/public/CV-prof.pdf'>
           here
         </a>
-        {" "}is my resume. You can skip the last pages, where I'm talking about my universities. Probably you do not care.
+        {" "}is my resume.
+        {/*You can skip the last pages, where I'm talking about my universities. Probably you do not care.*/}
       </p>
       <p>
         However, if you want to meet my thoughts you can go <Link to='/arts'>here</Link> and read my short personal essay. Maybe I will add some more content later.
