@@ -13,7 +13,7 @@ export default () =>
       <p>
         I'm looking for work.
       </p>
-      <p style={{ 'font-style': 'italic' }}>
+      <p style={{ 'fontStyle': 'italic' }}>
         TLDR: I'm open to freelancing in exciting and/or challenging projects. Feel free to contact me!
       </p>
       <p>
