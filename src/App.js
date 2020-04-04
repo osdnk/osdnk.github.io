@@ -24,13 +24,13 @@ function App() {
           {/*<img src={meanddoge} className="App-picture" alt="logo"/>*/}
           {/*<h1 className="App-title">{s.header}</h1>*/}
           {/*<h2 className="App-subtitle">{s.subtitle}</h2>*/}
-          <Route exact path="/" component={Hi}/>
           <Route path="/arts" component={Arts}/>
           {/*<Route path="/about-me" component={About}/>*/}
           {/*<Route path="/curriculum" component={Curriculum}/>*/}
           {/*<Route path="/projects" component={Projects}/>*/}
           {/*<Route path="/technologies" component={Technologies}/>*/}
           <Route path="/enroll-policy" component={Enroll}/>
+          <Route path="/" component={Hi}/>
           <img src={meandtree} className="App-picture-bottom" alt="meandtree"/>
         </div>
       </Router>
