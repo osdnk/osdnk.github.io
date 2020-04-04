@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './header/Header';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, useLocation } from 'react-router-dom';
 import Curriculum from './curriculum/Curriculum';
 import About from './about-me/About';
 import Arts from './arts/Arts';
@@ -13,32 +13,42 @@ import Enroll from './enroll-policy/Enroll-policy'
 import meandtree from "./assets/meandtree.jpg";
 import s from "./content/strings";
 
+function ScrollToTopOnLocationChange() {
+  let location = useLocation();
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+  return null
+}
+
 function App() {
   return (
     <div>
       <div id="full"/>
       <Router>
-        <Switch>
-          <Route path="/hire-me" component={Hire}/>
-          <Route path="/">
-            <div className="App" id="App">
-              <div className="App-topBar"/>
-              <Header/>
-              {/*<img src={meanddoge} className="App-picture" alt="logo"/>*/}
-              {/*<h1 className="App-title">{s.header}</h1>*/}
-              {/*<h2 className="App-subtitle">{s.subtitle}</h2>*/}
-              <Route path="/arts" component={Arts}/>
-              {/*<Route path="/about-me" component={About}/>*/}
-              {/*<Route path="/curriculum" component={Curriculum}/>*/}
-              {/*<Route path="/projects" component={Projects}/>*/}
-              {/*<Route path="/technologies" component={Technologies}/>*/}
-              <Route path="/enroll-policy" component={Enroll}/>
-              <Route exact path="/" component={Hi}/>
-              <img src={meandtree} className="App-picture-bottom" alt="meandtree"/>
-            </div>
-          </Route>
-        </Switch>
-
+        <div>
+          <ScrollToTopOnLocationChange/>
+          <Switch>
+            <Route path="/hire-me" component={Hire}/>
+            <Route path="/">
+              <div className="App" id="App">
+                <div className="App-topBar"/>
+                <Header/>
+                {/*<img src={meanddoge} className="App-picture" alt="logo"/>*/}
+                {/*<h1 className="App-title">{s.header}</h1>*/}
+                {/*<h2 className="App-subtitle">{s.subtitle}</h2>*/}
+                <Route path="/arts" component={Arts}/>
+                {/*<Route path="/about-me" component={About}/>*/}
+                {/*<Route path="/curriculum" component={Curriculum}/>*/}
+                {/*<Route path="/projects" component={Projects}/>*/}
+                {/*<Route path="/technologies" component={Technologies}/>*/}
+                <Route path="/enroll-policy" component={Enroll}/>
+                <Route exact path="/" component={Hi}/>
+                <img src={meandtree} className="App-picture-bottom" alt="meandtree"/>
+              </div>
+            </Route>
+          </Switch>
+        </div>
       </Router>
     </div>
   );
