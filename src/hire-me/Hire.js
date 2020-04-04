@@ -52,7 +52,7 @@ export default () =>
         my creative potential and often no idea what I can do. The blatantly proclaimed "work-life balance"
         does not necessarily have to be interpreted as shutting down a computer after eight hours of work,
         but as liberating the soul of an artist who becomes open to working as he or she wishes. Only then do
-        the limitations cease to be true - the day becomes longer, the sleep becomes less important, and lack
+        the limitations cease to be true – the day becomes longer, the sleep becomes less important, and lack
         of knowledge is something that can be made up for on the move. I remember a few years ago I was sitting
         up at night finishing my projects in the student scientific group and how much I want this to happen today.
       </p>
@@ -70,14 +70,14 @@ export default () =>
         <a href="https://reactnavigation.org">
           React Navigation
         </a>
-        {' '}work as extremely valuable to me
+        {' '}work as extremely valuable to me.
       </p>
       <p>
         So if you have a project that you value and need help with a scope that can match my skills,
         write to me. If you are looking for someone who will work on your product with passion and faith, I invite you.
         If you have a great open-source project whose potential you see, I also recommend myself.
         Money is not the most important thing here, although of course, I will not agree to volunteer or
-        almost volunteer work if the project will be a source of income for someone - then it is exploitation.
+        almost volunteer work if the project will be a source of income for someone – then it is exploitation.
         You can read my message as a freelance offer, but what I want to emphasize is that I'm not just looking for
         additional sources of funding, but additional spaces to fulfill myself as a programmer and creator.
         I'll be happy to take nights off because of your project, if only I'm in love with it.
