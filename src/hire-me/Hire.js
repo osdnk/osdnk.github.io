@@ -58,7 +58,7 @@ export default () =>
       </p>
       <p>
         I have a burning desire to work.
-        Not necessarily a job because I already have one and it is relatively satisfying for me as a way of earning
+        Not necessarily an employment because I already have one and it is relatively satisfying for me as a way of earning
         money and providing myself and my loved ones with a prosperous future. I am looking for something more.
         I have a passion for solving technical problems and creating products that are good for people as a form of
         service I can give to the world with the skills I have been given, and I have a strong desire to serve.
