@@ -10,28 +10,28 @@ import melookingprod from "../assets/me-prof.jpg";
 export default () =>
     <div className="WidePage">
       <img src={melookingprod} className="pictureCenter" alt="logo"/>
-      <p>
+      <p className="hire-p">
         I'm looking for work.
       </p>
-      <p style={{ 'fontStyle': 'italic' }}>
+      <p style={{ 'fontStyle': 'italic' }}  className="hire-p">
         TLDR: I'm open to freelancing in exciting and/or challenging projects. Feel free to contact me!
       </p>
       <p>
         I'm looking for work just like I've been looking for before and I'll probably be looking for a very long time.
       </p>
-      <p>
+      <p  className="hire-p">
         However, this does not necessarily mean that I am looking for a position in the classic sense of the word.
         If you read this and would like to potentially work with me one day,
         I think it's crucial that you understand my philosophy of working and developing software.
       </p>
-      <p>
+      <p  className="hire-p">
         For the last two years, I have been working at a software house agency.
         It was an incredibly exciting experience for me and the key values I gained were programming
         experience and knowledge that I didn't have before. The opportunity to work among extremely
         talented people was a wonderful opportunity for me to broaden my scope of competence and engage in
         thrilling projects, including those used by hundreds of thousands of other programmers. I am grateful for that.
       </p>
-      <p>
+      <p  className="hire-p">
         I have recently started a new phase in my life. I realized that
         I am able to work on advanced code, make difficult design decisions
         create working projects, but in fact, none of it was "mine" and I stopped
@@ -43,7 +43,7 @@ export default () =>
         emotional commitment, which cannot be reduced to following the guidelines without real
         fascination with the object of work.
       </p>
-      <p>
+      <p className="hire-p">
         My work at the agency has been like that at times.
         I didn't do overtime, I didn't care about smaller crises after my working hours.
         I almost never sat after nights or weekends. I don't encourage you to do that unless
@@ -56,7 +56,7 @@ export default () =>
         of knowledge is something that can be made up for on the move. I remember a few years ago I was sitting
         up at night finishing my projects in the student scientific group and how much I want this to happen today.
       </p>
-      <p>
+      <p className="hire-p">
         I have a burning desire to work.
         Not necessarily an employment because I already have one and it is relatively satisfying for me as a way of earning
         money and providing myself and my loved ones with a prosperous future. I am looking for something more.
@@ -72,7 +72,7 @@ export default () =>
         </a>
         {' '}work as extremely valuable to me.
       </p>
-      <p>
+      <p className="hire-p">
         So if you have a project that you value and need help with a scope that can match my skills,
         write to me. If you are looking for someone who will work on your product with passion and faith, I invite you.
         If you have a great open-source project whose potential you see, I also recommend myself.
