@@ -10,6 +10,9 @@ import melookingprod from "../assets/me-prof.jpg";
 export default () =>
     <div className="WidePage">
       <img src={melookingprod} className="pictureCenter" alt="logo"/>
+      <p style={{ 'fontStyle': 'italic' }}  className="hire-p">
+        update 4/22/2020: For now, I'm booked solid so most likely I won't be able to help you excluding some consulting
+      </p>
       <p className="hire-p">
         I'm looking for work.
       </p>
