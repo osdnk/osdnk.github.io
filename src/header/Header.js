@@ -9,6 +9,7 @@ export default () => (
   <header className="App-header" id="App-header">
     <img src={meanddoge} className="App-picture" alt="logo"/>
     <h1 className="App-title">{s.header}</h1>
+    <h2 className="App-subtitle">{s.pronouns}</h2>
     <h2 className="App-subtitle">{s.subtitle}</h2>
     {/*<div>*/}
     {/*</div>*/}
