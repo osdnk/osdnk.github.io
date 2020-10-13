@@ -24,9 +24,7 @@ export default () =>
       </p>
       <p>
         You can also find me on some socials, but please, just be nice and respectful.
-        If you want to be a friend of mine, use Facebook.
-        If you want to hire me, do not use Facebook. If you want to talk about coding, use Twitter.
-        Sometimes I am not answering immediately, but if you are just gentle be sure I will be back to you.
+        Sometimes I am not answering immediately, but be sure I will be back to you.
         I am often not reading notifications on GitHub regularly and I am sorry.
 
       </p>
@@ -39,7 +37,7 @@ export default () =>
       </div>
 
       <p>
-        Thanks for this small trip. Hope to see you someday in a real world. Always mind that at the end of the day on the other side of screens all we are humans at last.
+        Thanks. Hope to see you someday in a real world. Always mind that at the end of the day on the other side of screens all we are humans at last.
       </p>
 
       {/*<IG/>*/}

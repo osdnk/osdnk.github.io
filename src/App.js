@@ -33,6 +33,8 @@ function App() {
             <Route path="/">
               <div className="App" id="App">
                 <div className="App-topBar"/>
+                <p style={{ fontSize: 10, color: '#888' }}>click somewhere arund</p>
+
                 <Header/>
                 {/*<img src={meanddoge} className="App-picture" alt="logo"/>*/}
                 {/*<h1 className="App-title">{s.header}</h1>*/}
